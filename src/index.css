@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import '@splidejs/react-splide/css';
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0d0c11;
+    color: white;
+}
+.navbar {
+    @apply absolute z-10;
+}
+.dark-overlay {
+    @apply h-full absolute w-full top-0
+}
+.carousel-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+.card-overlay {
+    background: rgba(13, 12, 17, 0.3);
+    width: 180px;
+}
