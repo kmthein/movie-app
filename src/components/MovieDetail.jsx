@@ -8,8 +8,8 @@ const MovieDetail = () => {
     const movie = useLoaderData();
 
   return (
-    <div className=' absolute top-20 left-20'>
-        <div className='flex gap-20'>
+    <div className=' absolute top-20 left-12 sm:left-20'>
+        <div className='flex flex-col sm:flex-row gap-20'>
                 <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} width={300} className=' border-0 rounded-lg' />
             <div className='pt-10'>
                 <div className=' flex items-center w-[90%] justify-between'>

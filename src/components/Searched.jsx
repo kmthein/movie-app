@@ -13,7 +13,7 @@ const Searched = () => {
     <>
     <div className='absolute top-20 left-20'>
         <p className='text-xl'>Search results for "{title}"</p>
-        <div className='grid grid-cols-6 gap-5 my-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-6 gap-5 my-5'>
         {
             searchMovies.map((movie) => (
                 <Card key={movie.id} movie={movie} />

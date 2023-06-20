@@ -16,9 +16,9 @@ const HeroCard = ({movie}) => {
         </div>
         <div className="dark-overlay carousel-overlay"></div>
         <div className="slide-info text-white absolute top-60 left-10 ml-[10%]">
-            <div className=" h-[30%] w-[50%]">
-            <h1 className="text-5xl font-bold">{movie.title}</h1>
-            <p className="mt-5 leading-8">
+            <div className=" h-[30%] w-full sm:w-[50%]">
+            <h1 className="text-3xl sm:text-5xl font-bold">{movie.title}</h1>
+            <p className="mt-5 leading-8 hidden sm:block">
                 {movie.overview}
             </p>
             </div>

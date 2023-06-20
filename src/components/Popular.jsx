@@ -12,7 +12,7 @@ const Popular = () => {
       {/* <Hero /> */}
       <div className="px-10 mt-8">
         <h1 className="text-xl font-semibold">Popular Now</h1>
-        <div className=" grid grid-cols-6 overflow-x-hidden scroll whitespace-nowrap scroll-smooth gap-2 px-2 mt-4 text-center cursor-pointer my-10 border-t-[1px] border-slate-400 pt-10">
+        <div className=" grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-2 px-2 mt-4 text-center cursor-pointer my-10 border-t-[1px] border-slate-400 pt-10">
           {popularMovies.map((movie) => (
             <Card movie={movie} key={movie.id} />
           ))}
