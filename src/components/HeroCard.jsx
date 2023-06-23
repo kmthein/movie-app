@@ -1,17 +1,20 @@
 import { SplideSlide } from "@splidejs/react-splide";
 import React from "react";
 import { BsPlayFill } from "react-icons/bs";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const HeroCard = ({movie}) => {
   return (
     <>
       <SplideSlide>
         <div className=" w-full h-screen relative">
-          <img
+          <LazyLoadImage
             src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
             alt={movie.title}
-            className=" w-full h-screen object-cover"
+            effect="blur"
+            className=" w-full object-cover sm:h-full"
           />
         </div>
         <div className="dark-overlay carousel-overlay"></div>

@@ -4,6 +4,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { key } from "../api";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 let isSearched = true;
 
@@ -30,7 +31,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className=" flex py-6 px-5 xl:px-20 lg:justify-between">
         <Link to="/">
-          <img
+          <LazyLoadImage
             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
             alt="logo"
             width={90}
